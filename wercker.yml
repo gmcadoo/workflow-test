@@ -1,0 +1,35 @@
+box: alpine
+
+build:
+  steps:
+    - script:
+      name: Hello
+      code: |
+        echo "Hello pipeline 1!" > hello.txt
+        
+pipeline2:
+  steps:
+    - script:
+      name: step2
+      code: |
+        echo "Hello pipeline 2!"  > hello.txt
+        
+pipeline3a:
+  steps:
+    - script:
+      name: step3a
+      code: |
+        echo "Hello pipeline 3a!"  > hello.txt
+pipeline3b:
+  steps:
+    - script:
+      name: step3b
+      code: |
+        echo "Hello pipeline 3b!"  > hello.txt
+pipeline3c:
+  steps:
+    - script:
+      name: step3c
+      code: |
+        echo "Hello pipeline 3c!"  > hello.txt
+
