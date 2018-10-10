@@ -40,4 +40,10 @@ pipeline3c:
         ls -l *
         sleep 1m
         echo "Hello pipeline 3c!"  > hello.txt
+        
+  after-steps:
+    - script:
+      name: after-step3c
+      code: |
+        echo "After step executed"
 
