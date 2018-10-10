@@ -12,7 +12,7 @@ pipeline2:
     - script:
       name: step2
       code: |
-        sleep 2m
+        sleep 4m
         echo "Hello pipeline 2!"  > hello.txt
         
 pipeline3a:
