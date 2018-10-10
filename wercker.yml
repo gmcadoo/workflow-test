@@ -37,5 +37,7 @@ pipeline3c:
     - script:
       name: step3c
       code: |
+        ls -l *
+        sleep 1m
         echo "Hello pipeline 3c!"  > hello.txt
 
