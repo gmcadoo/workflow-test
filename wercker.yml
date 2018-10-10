@@ -16,6 +16,8 @@ pipeline2:
         sleep 4m
         echo "Sleeping for 4 more minutes"
         sleep 4m
+        echo "Sleeping for 4 more minutes"
+        sleep 4m
         echo "Hello pipeline 2!"  > hello.txt
         
 pipeline3a:
